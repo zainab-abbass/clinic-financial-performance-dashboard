@@ -93,7 +93,7 @@ Provides a high-level summary of:
 - financial performance indicators
 - clinic performance visibility
 
-![Overview Dashboard](screenshots/overview-dashboard.png)
+![Overview Dashboard](screenshots/overview.png)
 
 ---
 
@@ -108,7 +108,7 @@ Focused on:
 - revenue contribution analysis
 - healthcare service performance
 
-![Revenue Dashboard](screenshots/revenue-dashboard.png)
+![Revenue Dashboard](screenshots/revenue.png)
 
 ---
 
@@ -123,7 +123,7 @@ Focused on:
 - efficiency monitoring
 - performance benchmarking
 
-![Performance Dashboard](screenshots/performance-dashboard.png)
+![Performance Dashboard](screenshots/performance.png)
 
 ---
 
@@ -138,7 +138,7 @@ Focused on:
 - patient volume analysis
 - patient behavior insights
 
-![Patients Dashboard](screenshots/patients-dashboard.png)
+![Patients Dashboard](screenshots/patients.png)
 
 ---
 
@@ -153,7 +153,7 @@ Focused on:
 - margin analysis
 - profitability performance tracking
 
-![Profitability Dashboard](screenshots/profitability-dashboard.png)
+![Profitability Dashboard](screenshots/profitability.png)
 
 ---
 
@@ -168,7 +168,7 @@ Focused on:
 - cost efficiency analysis
 - expense variance tracking
 
-![OPEX Dashboard](screenshots/opex-dashboard.png)
+![OPEX Dashboard](screenshots/opex.png)
 
 ---
 
@@ -183,7 +183,7 @@ Focused on:
 - financial position monitoring
 - balance sheet health tracking
 
-![Balance Sheet Dashboard](screenshots/balance-sheet-dashboard.png)
+![Balance Sheet Dashboard](screenshots/balancesheet.png)
 
 ---
 
@@ -198,7 +198,7 @@ Focused on:
 - operational cash management
 - financial stability monitoring
 
-![Cash Position Dashboard](screenshots/cash-position-dashboard.png)
+![Cash Position Dashboard](screenshots/cashposition.png)
 
 ---
 
