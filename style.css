@@ -223,3 +223,29 @@ color:#555;
 .detail-card p {
     font-size: 18px;
 }
+
+.my-role {
+    padding: 100px 0;
+    background: #000;
+}
+
+.my-role h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 48px;
+}
+
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.role-item {
+    padding: 25px;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
