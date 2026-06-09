@@ -324,12 +324,12 @@ border-bottom:1px solid #ececec;
     font-size:15px;
 }
 
-.section h2{
+.overview h2{
     text-align:left;
     margin-bottom:40px;
 }
 
 .narrow{
     max-width:900px;
-    margin:0;
+    margin:auto;
 }
