@@ -96,13 +96,6 @@ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
 }
 
-.module{
-background:white;
-padding:35px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
 .module h3{
 color:#d4af37;
 margin-bottom:15px;
@@ -256,4 +249,189 @@ padding:35px;
 border-radius:15px;
 box-shadow:0 5px 20px rgba(0,0,0,0.08);
 min-height:220px;
+}
+
+/* SECTION INTRO */
+
+.section-intro{
+font-size:20px;
+max-width:900px;
+margin-bottom:50px;
+opacity:.9;
+}
+
+/* BUSINESS CHALLENGE */
+
+.card{
+background:#1d1d1d;
+padding:35px;
+border:1px solid #d4af37;
+border-radius:15px;
+transition:all .3s ease;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.card p{
+color:#d9d9d9;
+line-height:1.7;
+}
+
+/* BUSINESS IMPACT */
+
+.impact-stats{
+margin-top:20px;
+}
+
+.impact-card{
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.impact-card h3{
+font-size:48px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.impact-card p{
+font-size:18px;
+color:#555;
+}
+
+/* MY ROLE */
+
+.role-item{
+background:#111;
+padding:25px;
+border:1px solid #d4af37;
+border-radius:15px;
+text-align:center;
+color:white;
+font-weight:500;
+transition:all .3s ease;
+}
+
+.role-item:hover{
+transform:translateY(-5px);
+}
+
+/* GALLERY */
+
+.gallery-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+display:block;
+}
+
+/* MODULES */
+
+.module{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+min-height:220px;
+transition:all .3s ease;
+}
+
+.module:hover{
+transform:translateY(-5px);
+}
+
+.module p{
+color:#555;
+}
+
+/* OUTCOMES */
+
+.outcome{
+border-top:4px solid #d4af37;
+}
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+padding:60px 0;
+text-align:center;
+}
+
+.footer h3{
+font-size:28px;
+margin-bottom:15px;
+color:#d4af37;
+}
+
+.footer p{
+max-width:800px;
+margin:10px auto;
+opacity:.85;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.hero{
+padding:80px 0;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.section{
+padding:70px 0;
+}
+
+.section h2{
+font-size:34px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.modules{
+grid-template-columns:1fr;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.details-grid{
+grid-template-columns:1fr;
+}
+
+.role-grid{
+grid-template-columns:1fr;
+}
+
+.cta h2{
+font-size:36px;
+}
+
 }
