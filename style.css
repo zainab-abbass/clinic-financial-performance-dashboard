@@ -193,26 +193,25 @@ p{ font-size:clamp(16px,1.2vw,18px); }
 .shot:hover{ transform:translateY(-5px); box-shadow:0 22px 55px rgba(0,0,0,.11); }
 
 .shot__frame{
-    position:relative; aspect-ratio:16/9; background:var(--ink);
-    cursor:zoom-in; overflow:hidden;
+    position:relative; background:var(--ink);
+    cursor:zoom-in; overflow:hidden; line-height:0;
 }
 .shot__frame img{
-    width:100%; height:100%; object-fit:cover; object-position:top center;
-    transition:transform .5s var(--ease);
+    width:100%; height:auto; display:block;
 }
-.shot__frame:hover img{ transform:scale(1.03); }
 
-/* placeholder shown until a real screenshot is dropped in */
+/* placeholder shown only if a screenshot is missing */
 .shot__ph{
-    position:absolute; inset:0; display:flex; flex-direction:column;
-    align-items:center; justify-content:center; gap:16px; text-align:center;
+    display:none; width:100%; aspect-ratio:16/9;
+    flex-direction:column; align-items:center; justify-content:center;
+    gap:16px; text-align:center; line-height:1.5;
     background:
         repeating-linear-gradient(45deg,#141414,#141414 14px,#171717 14px,#171717 28px);
-    border:1px dashed var(--gold-line); border-radius:var(--radius);
     color:var(--text-mute); padding:24px;
 }
-.shot__frame.has-image .shot__ph{ display:none; }
-.shot__frame:not(.has-image) img{ display:none; }
+.shot__frame.is-missing img{ display:none; }
+.shot__frame.is-missing .shot__ph{ display:flex; }
+.shot__frame.is-missing{ cursor:default; }
 .shot__ph .bars{ display:flex; align-items:flex-end; gap:6px; height:46px; }
 .shot__ph .bars i{
     width:11px; background:var(--gold); opacity:.85; border-radius:3px 3px 0 0;
@@ -234,7 +233,8 @@ p{ font-size:clamp(16px,1.2vw,18px); }
     padding:6px 12px; border-radius:999px; opacity:0;
     transition:opacity .25s var(--ease);
 }
-.shot__frame.has-image:hover .shot__zoom{ opacity:1; }
+.shot__frame:hover .shot__zoom{ opacity:1; }
+.shot__frame.is-missing .shot__zoom{ display:none; }
 
 .shot__meta{
     display:flex; gap:18px; align-items:flex-start;
