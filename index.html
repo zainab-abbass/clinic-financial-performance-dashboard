@@ -3,236 +3,304 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Healthcare Financial Performance Dashboard</title>
+<title>Healthcare Performance Analytics Dashboard — Power BI Project</title>
+<meta name="description" content="Power BI executive reporting solution consolidating financial, operational and patient analytics into a centralized decision-support framework.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO -->
+<!-- ===================== NAV ===================== -->
+<!-- TODO: change "Zainab" to whatever name/brand you use across the site -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="nav__brand"><span class="dot"></span>Zainab</a>
+    <div class="nav__links">
+      <a href="#overview">Overview</a>
+      <a href="#showcase">Dashboards</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contribution">My Role</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
-<section class="hero">
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <div class="container hero__inner">
+    <span class="tag">Healthcare Analytics · Demonstration Project</span>
+    <h1>Healthcare Performance <span class="accent">Analytics</span> Dashboard</h1>
+    <p class="subtitle">
+      A Power BI executive reporting solution showing how financial, operational and
+      patient analytics can live in one centralized decision-support framework.
+    </p>
+    <p class="note">
+      Built with Power BI, DAX and dimensional modeling to demonstrate executive
+      reporting, dashboard design and healthcare analytics.
+    </p>
+    <div class="hero__tags">
+      <span>Power BI</span>
+      <span>DAX Modeling</span>
+      <span>Executive Reporting</span>
+      <span>Financial Analytics</span>
+      <span>Healthcare Analytics</span>
+      <span>Dashboard Design</span>
+    </div>
+  </div>
+</header>
 
-<div class="container">
-
-<span class="tag">
-Healthcare Analytics Demonstration Project
-</span>
-
-<h1>Healthcare Performance Analytics Dashboard</h1>
-
-<p class="subtitle">
-Power BI executive reporting solution demonstrating how financial, operational and patient analytics can be consolidated into a centralized decision-support framework.
-</p>
-
-<p class="hero-note">
-Developed using Power BI, DAX and dimensional modeling techniques to showcase executive reporting, dashboard design and healthcare analytics capabilities.
-</p>
-  
-<div class="hero-stats">
-
-<div class="hero-tags">
-
-<span>Power BI</span>
-<span>DAX Modeling</span>
-<span>Executive Reporting</span>
-<span>Financial Analytics</span>
-<span>Healthcare Analytics</span>
-<span>Dashboard Design</span>
-
-
-</div>
-
-</div>
-
-</div>
-
+<!-- ===================== STAT STRIP ===================== -->
+<!-- TODO: swap these numbers for your real project figures -->
+<section class="stats">
+  <div class="stat"><div class="stat__num">8</div><div class="stat__label">Executive dashboards</div></div>
+  <div class="stat"><div class="stat__num">6</div><div class="stat__label">Reporting domains</div></div>
+  <div class="stat"><div class="stat__num">20+</div><div class="stat__label">DAX measures</div></div>
+  <div class="stat"><div class="stat__num">1</div><div class="stat__label">Unified data model</div></div>
 </section>
 
-<!-- OVERVIEW -->
+<!-- ===================== OVERVIEW ===================== -->
+<section class="section section--paper overview" id="overview">
+  <div class="narrow reveal">
+    <span class="eyebrow">Project Overview</span>
+    <h2>One source of truth for the numbers leadership relies on.</h2>
+    <p>
+      Healthcare organizations often spread financial, operational and patient
+      data across multiple systems, which makes executive reporting slow and
+      inconsistent.
+    </p>
+    <p>
+      This demonstration project consolidates those reporting domains into a single
+      Power BI analytics framework — improving visibility, keeping definitions
+      consistent, and giving decision-makers a faster path from data to action.
+    </p>
+  </div>
+</section>
 
-<section class="section light">
-    <div class="container narrow">
+<!-- ===================== DASHBOARD SHOWCASE ===================== -->
+<section class="section showcase" id="showcase">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Dashboard Showcase</span>
+      <h2>Eight connected views, one reporting model.</h2>
+      <p>Click any dashboard to view it full size.</p>
+    </div>
 
-        <h2>Project Overview</h2>
+    <div class="gallery">
 
-        <p>
-            Healthcare organizations often manage financial,
-            operational and patient data across multiple systems,
-            making executive reporting difficult and time-consuming.
-        </p>
+      <!-- Drop your screenshots in /images with these exact names.
+           Each card auto-detects whether its image exists. -->
 
-        <p>
-            This Power BI demonstration project showcases how
-            multiple reporting domains can be consolidated into a
-            centralized analytics framework to improve visibility,
-            reporting consistency and decision support.
-        </p>
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge Executive Dashboard">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard1.jpg" alt="Executive Dashboard — top-level KPIs">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard1.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">01</span>
+          <div><h3>Executive Dashboard</h3><p>The single-screen view of the KPIs leadership checks first.</p></div>
+        </div>
+      </article>
+
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge Financial Performance">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard2.jpg" alt="Financial Performance dashboard">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard2.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">02</span>
+          <div><h3>Financial Performance</h3><p>Revenue, expenses and gross profit tracked over time.</p></div>
+        </div>
+      </article>
+
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge Profitability Analysis">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard3.jpg" alt="Profitability Analysis dashboard">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard3.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">03</span>
+          <div><h3>Profitability Analysis</h3><p>Margin and contribution broken down by department.</p></div>
+        </div>
+      </article>
+
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge Patient Analytics">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard4.jpg" alt="Patient Analytics dashboard">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard4.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">04</span>
+          <div><h3>Patient Analytics</h3><p>Acquisition, retention and visit patterns at a glance.</p></div>
+        </div>
+      </article>
+
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge Cash Flow Monitoring">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard5.jpg" alt="Cash Flow Monitoring dashboard">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard5.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">05</span>
+          <div><h3>Cash Flow Monitoring</h3><p>Inflows, outflows and liquidity in one place.</p></div>
+        </div>
+      </article>
+
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge Balance Sheet Analysis">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard6.jpg" alt="Balance Sheet Analysis dashboard">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard6.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">06</span>
+          <div><h3>Balance Sheet Analysis</h3><p>Assets, liabilities and equity position over the period.</p></div>
+        </div>
+      </article>
+
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge Expense Monitoring">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard7.jpg" alt="Expense Monitoring dashboard">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard7.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">07</span>
+          <div><h3>Expense Monitoring</h3><p>Where spend concentrates and how it trends.</p></div>
+        </div>
+      </article>
+
+      <article class="shot reveal">
+        <div class="shot__frame" tabindex="0" role="button" aria-label="Enlarge KPI Tracking">
+          <span class="shot__zoom">CLICK TO ENLARGE</span>
+          <img src="images/dashboard8.jpg" alt="KPI Tracking dashboard">
+          <div class="shot__ph"><div class="bars"><i></i><i></i><i></i><i></i></div><code>images/dashboard8.jpg</code></div>
+        </div>
+        <div class="shot__meta">
+          <span class="shot__num">08</span>
+          <div><h3>KPI Tracking</h3><p>Targets versus actuals across the metrics that matter.</p></div>
+        </div>
+      </article>
 
     </div>
+  </div>
 </section>
 
-<!-- DASHBOARD GALLERY -->
-
-<section class="section light">
-
-<div class="container">
-
-<h2>Dashboard Showcase</h2>
-
-<div class="gallery">
-
-<!-- Add your 8 screenshots here -->
-
-<div class="gallery-card">
-<img src="images/dashboard1.jpg" alt="">
-<h3>Executive Dashboard</h3>
-</div>
-
-<div class="gallery-card">
-<img src="images/dashboard2.jpg" alt="">
-<h3>Financial Performance</h3>
-</div>
-
-<div class="gallery-card">
-<img src="images/dashboard3.jpg" alt="">
-<h3>Profitability Analysis</h3>
-</div>
-
-<div class="gallery-card">
-<img src="images/dashboard4.jpg" alt="">
-<h3>Patient Analytics</h3>
-</div>
-
-<div class="gallery-card">
-<img src="images/dashboard5.jpg" alt="">
-<h3>Cash Flow Monitoring</h3>
-</div>
-
-<div class="gallery-card">
-<img src="images/dashboard6.jpg" alt="">
-<h3>Balance Sheet Analysis</h3>
-</div>
-
-<div class="gallery-card">
-<img src="images/dashboard7.jpg" alt="">
-<h3>Expense Monitoring</h3>
-</div>
-
-<div class="gallery-card">
-<img src="images/dashboard8.jpg" alt="">
-<h3>KPI Tracking</h3>
-</div>
-
-</div>
-
-</div>
-
+<!-- ===================== CAPABILITIES ===================== -->
+<section class="section section--ink" id="capabilities">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Dashboard Capabilities</span>
+      <h2>What the reporting framework delivers.</h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal" data-n="01"><h3>Financial Performance Monitoring</h3><p>Track revenue, expenses, gross profit and overall financial trends.</p></div>
+      <div class="card reveal" data-n="02"><h3>Department Profitability Analysis</h3><p>Compare financial contribution and performance across departments.</p></div>
+      <div class="card reveal" data-n="03"><h3>Patient Analytics</h3><p>Monitor patient acquisition, retention and visit behavior.</p></div>
+      <div class="card reveal" data-n="04"><h3>Cash Flow Visibility</h3><p>Analyze cash movement and liquidity performance.</p></div>
+      <div class="card reveal" data-n="05"><h3>Executive KPI Reporting</h3><p>Centralized KPI monitoring through executive dashboards.</p></div>
+      <div class="card reveal" data-n="06"><h3>Financial Statement Analysis</h3><p>Review P&amp;L, Balance Sheet and Cash Flow performance.</p></div>
+    </div>
+  </div>
 </section>
 
-<!-- CAPABILITIES -->
-
-<section class="section dark">
-
-<div class="container">
-
-<h2>Dashboard Capabilities</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Financial Performance Monitoring</h3>
-<p>
-Track revenue, expenses, gross profit and overall financial trends.
-</p>
-</div>
-
-<div class="card">
-<h3>Department Profitability Analysis</h3>
-<p>
-Compare financial contribution and performance across departments.
-</p>
-</div>
-
-<div class="card">
-<h3>Patient Analytics</h3>
-<p>
-Monitor patient acquisition, retention and visit behavior.
-</p>
-</div>
-
-<div class="card">
-<h3>Cash Flow Visibility</h3>
-<p>
-Analyze cash movement and liquidity performance.
-</p>
-</div>
-
-<div class="card">
-<h3>Executive KPI Reporting</h3>
-<p>
-Centralized KPI monitoring through executive dashboards.
-</p>
-</div>
-
-<div class="card">
-<h3>Financial Statement Analysis</h3>
-<p>
-Review P&L, Balance Sheet and Cash Flow performance.
-</p>
-</div>
-
-</div>
-
-</div>
-
+<!-- ===================== CONTRIBUTION ===================== -->
+<section class="section section--paper" id="contribution">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">My Contribution</span>
+      <h2>What I built, end to end.</h2>
+    </div>
+    <div class="contrib">
+      <div class="contrib__item reveal"><span class="n">01</span><span class="t">Designed the reporting framework</span></div>
+      <div class="contrib__item reveal"><span class="n">02</span><span class="t">Built the Power BI data model</span></div>
+      <div class="contrib__item reveal"><span class="n">03</span><span class="t">Developed the DAX measures</span></div>
+      <div class="contrib__item reveal"><span class="n">04</span><span class="t">Created the KPI architecture</span></div>
+      <div class="contrib__item reveal"><span class="n">05</span><span class="t">Designed the dashboard UX</span></div>
+      <div class="contrib__item reveal"><span class="n">06</span><span class="t">Developed profitability reporting</span></div>
+      <div class="contrib__item reveal"><span class="n">07</span><span class="t">Created patient analytics views</span></div>
+      <div class="contrib__item reveal"><span class="n">08</span><span class="t">Delivered the executive reporting solution</span></div>
+    </div>
+  </div>
 </section>
 
-<!-- CONTRIBUTION -->
-
-<section class="section">
-
-<div class="container">
-
-<h2>My Contribution</h2>
-
-<div class="cards light-cards">
-
-<div class="light-card">Designed reporting framework</div>
-<div class="light-card">Built Power BI data model</div>
-<div class="light-card">Developed DAX measures</div>
-<div class="light-card">Created KPI architecture</div>
-<div class="light-card">Designed dashboard UX</div>
-<div class="light-card">Developed profitability reporting</div>
-<div class="light-card">Created patient analytics views</div>
-<div class="light-card">Delivered executive reporting solution</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer class="footer">
-
-<div class="container">
-
-<h2>Finance Transformation Through Analytics</h2>
-
-<p>
-Power BI • Financial Analytics • Executive Reporting • Business Intelligence
-</p>
-
-</div>
-
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer__top reveal">
+      <h2>Finance transformation through analytics</h2>
+      <p>Open to conversations about Power BI, financial reporting and business intelligence.</p>
+      <!-- TODO: replace the # links with your real GitHub, LinkedIn and email -->
+      <div class="footer__links">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:you@example.com">Email</a>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>Power BI · Financial Analytics · Executive Reporting · BI</span>
+      <span>© 2026 · Built with Power BI &amp; DAX</span>
+    </div>
+  </div>
 </footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lightbox__cap" id="lbCap"></div>
+</div>
+
+<script>
+/* ---- detect which screenshots exist, enable zoom only on those ---- */
+document.querySelectorAll('.shot__frame').forEach(function(frame){
+  var img = frame.querySelector('img');
+  function activate(){
+    frame.classList.add('has-image');
+    frame.addEventListener('click', open);
+    frame.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); open(); }
+    });
+  }
+  function open(){
+    var lb = document.getElementById('lightbox');
+    document.getElementById('lbImg').src = img.src;
+    document.getElementById('lbImg').alt = img.alt;
+    document.getElementById('lbCap').textContent = img.alt;
+    lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  if(img.complete && img.naturalWidth > 0){ activate(); }
+  else { img.addEventListener('load', activate); }
+  /* if the file is missing, the placeholder simply stays visible */
+});
+
+/* ---- lightbox close ---- */
+(function(){
+  var lb = document.getElementById('lightbox');
+  function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+  document.getElementById('lbClose').addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+
+/* ---- scroll reveal ---- */
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold:.12 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
 
 </body>
 </html>
