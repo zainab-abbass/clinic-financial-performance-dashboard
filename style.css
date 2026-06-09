@@ -280,10 +280,10 @@ margin-top:50px;
 display:flex;
 flex-wrap:wrap;
 gap:12px;
-margin-top:50px;
+margin-top:35px;
 max-width:900px;
-padding-top:20px;  
-border-top:1px solid rgba(255,255,255,.08);
+padding-top:30px;  
+border-top:1px solid rgba(212,175,55,.15);
 }
 
 .hero-tags span{
@@ -304,4 +304,12 @@ padding:110px 0;
 background:#f7f7f7;
 border-top:1px solid #ececec;
 border-bottom:1px solid #ececec;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-description{
+    max-width:700px;
 }
