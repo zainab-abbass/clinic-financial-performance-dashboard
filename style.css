@@ -78,31 +78,34 @@ p{ font-size:clamp(16px,1.2vw,18px); }
    ========================================================= */
 .nav{
     position:sticky; top:0; z-index:60;
-    background:rgba(13,13,13,.72);
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
-    border-bottom:1px solid rgba(255,255,255,.07);
+    background:#000;
 }
 .nav__inner{
     display:flex; align-items:center; justify-content:space-between;
-    height:64px;
+    min-height:72px;
 }
-.nav__brand{
-    font-family:Georgia, "Times New Roman", serif; font-weight:700;
-    color:var(--gold); font-size:24px; letter-spacing:.02em;
-    display:inline-flex; align-items:center; gap:10px;
+/* ZA monogram — same overlapping Georgia recipe as the main site, scaled to fit */
+.logo{
+    position:relative; display:inline-block; width:49px; height:44px;
+    font-family:Georgia, "Times New Roman", serif; text-decoration:none;
 }
-.nav__brand .dot{ width:9px; height:9px; border-radius:50%; background:var(--gold); }
-.nav__links{ display:flex; gap:30px; }
+.logo .z, .logo .a{
+    position:absolute; font-size:44px; color:var(--gold);
+    font-weight:400; line-height:1;
+}
+.logo .z{ left:3px; top:-3px; }
+.logo .a{ left:17px; top:13px; }
+.nav__links{ display:flex; gap:35px; }
 .nav__links a{
-    font-size:14px; color:rgba(255,255,255,.7); position:relative;
+    font-size:16px; font-weight:600; letter-spacing:.5px;
+    color:#fff; position:relative;
     transition:color .25s var(--ease);
 }
 .nav__links a::after{
     content:""; position:absolute; left:0; bottom:-6px; height:2px; width:0;
     background:var(--gold); transition:width .3s var(--ease);
 }
-.nav__links a:hover{ color:#fff; }
+.nav__links a:hover{ color:var(--gold); }
 .nav__links a:hover::after{ width:100%; }
 @media(max-width:760px){ .nav__links{ display:none; } }
 
