@@ -120,10 +120,10 @@ p{
 ========================= */
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
-    margin-top:50px;
+display:grid;
+grid-template-columns:1fr;
+gap:50px;
+margin-top:50px;
 }
 
 .gallery-card{
@@ -292,4 +292,14 @@ color:#d4af37;
 font-size:14px;
 font-weight:500;
 background:rgba(212,175,55,.08);
+}
+
+.section{
+padding:110px 0;
+}
+
+.light{
+background:#f7f7f7;
+border-top:1px solid #ececec;
+border-bottom:1px solid #ececec;
 }
