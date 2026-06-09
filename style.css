@@ -302,3 +302,17 @@ p{
         grid-template-columns:1fr;
     }
 }
+.hero-tags{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:40px;
+}
+
+.hero-tags span{
+padding:12px 20px;
+border:1px solid #d4af37;
+border-radius:30px;
+color:#d4af37;
+font-weight:600;
+}
