@@ -249,3 +249,11 @@ color:#555;
     text-align: center;
     color: white;
 }
+
+.module{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+min-height:220px;
+}
