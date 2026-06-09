@@ -323,3 +323,13 @@ border-bottom:1px solid #ececec;
     color:#9c9c9c;
     font-size:15px;
 }
+
+.section h2{
+    text-align:left;
+    margin-bottom:40px;
+}
+
+.narrow{
+    max-width:900px;
+    margin:0;
+}
