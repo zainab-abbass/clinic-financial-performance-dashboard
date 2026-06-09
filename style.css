@@ -72,9 +72,6 @@ p{
     margin-bottom:20px;
 }
 
-.section h2{
-    text-align:center;
-}
 
 /* =========================
    HERO
@@ -108,11 +105,18 @@ p{
 /* =========================
    OVERVIEW
 ========================= */
+.narrow{
+    max-width:900px;
+}
 
-.overview-text{
-    text-align:center;
+.narrow h2{
+    margin-bottom:40px;
+}
+
+.narrow p{
+    font-size:20px;
+    color:#333;
     max-width:850px;
-    margin:auto;
 }
 
 /* =========================
